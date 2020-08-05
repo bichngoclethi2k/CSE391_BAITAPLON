@@ -1,6 +1,12 @@
 *{
     margin-left: 0px;
 }
+#navbar{
+    background-color: rgba(194, 194, 194,0.4);
+}
+#navbar ul li a{
+    color: white;
+}
 #text1{
     margin-top: 339px;
     margin-left: 50px;
@@ -34,8 +40,15 @@
 #brackgroud3{
     background-image: url(img/SectionBackground.png);
     background-size: cover;
-    width: 100%;
-    margin: 0px;
+    width: 101%;
+}
+#brackgroud5{
+    background-image: url(img/SectionBackground-1.png);
+    background-repeat: no-repeat;
+    width: 101%;
+}
+#backgroud6{
+    background: black;
 }
 #row{
     margin-top: 100px;
@@ -46,4 +59,14 @@
 #icon{
     text-align: center;
     margin-top: 150px;
+}
+#form{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius:25px ;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: white;
+    background: transparent;
+    margin: 30px;
+    
 }
