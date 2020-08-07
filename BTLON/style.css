@@ -48,7 +48,8 @@
     width: 101%;
 }
 #backgroud6{
-    background: black;
+    background: #060a1c;
+    width: 101%;
 }
 #row{
     margin-top: 100px;
@@ -69,4 +70,12 @@
     background: transparent;
     margin: 30px;
     
+}
+.col-md-9 a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+.row ul{
+    list-style-type: none;
 }
