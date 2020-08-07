@@ -1,5 +1,5 @@
 *{
-    margin-left: 0px;
+    margin: 0px;
 }
 #navbar{
     background-color: rgba(194, 194, 194,0.4);
@@ -40,7 +40,8 @@
 #brackgroud3{
     background-image: url(img/SectionBackground.png);
     background-size: cover;
-    width: 101%;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 #brackgroud5{
     background-image: url(img/SectionBackground-1.png);
@@ -49,10 +50,10 @@
 }
 #backgroud6{
     background: #060a1c;
-    width: 101%;
+    width: 100%;
 }
 #row{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #tech1{
     text-align: center;
@@ -62,13 +63,12 @@
     margin-top: 150px;
 }
 #form{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius:25px ;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border: .125rem solid #fff;
+    border-radius: 1.5625rem;
     color: white;
-    background: transparent;
-    margin: 30px;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0.6rem;
     
 }
 .col-md-9 a{
