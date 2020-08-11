@@ -4,6 +4,59 @@
 #navbar ul li a{
     color: white;
 }
+#nav{
+    margin: 20px;
+}
 #backgroud1{
     background-image: url(img/BackgroundAbout.png);
+}
+img.cangiua{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#text1{
+    line-height: 2;
+}
+.row .text-center .row #text2{
+    line-height: 2;
+    text-align: justify;
+    padding: 15px ;
+    margin-bottom: 78px;
+
+}
+#text3 h5{
+    margin: 25px 0px;
+
+}
+#text3 p{
+    line-height: 2;
+    color: #858585;
+}
+#apvn{
+    background: url(img/vietnam-bg.png) 50% no-repeat;
+    background-size: contain;
+}
+#apjapan{
+    background: url(img/japan-bg.png) 50% no-repeat;
+    background-size: contain;
+}
+#brackgroud5{
+    background-image: url(img/SectionBackground-1.png);
+    background-repeat: no-repeat;
+    width: 101%;
+    margin-top: 247px;
+}
+#form{
+    border: .125rem solid #fff;
+    border-radius: 1.5625rem;
+    color: white;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0.6rem;
+    
+}
+#backgroud6{
+    background: #060a1c;
+    width: 100%;
 }

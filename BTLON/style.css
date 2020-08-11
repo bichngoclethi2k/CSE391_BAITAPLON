@@ -47,13 +47,15 @@
     background-image: url(img/SectionBackground-1.png);
     background-repeat: no-repeat;
     width: 101%;
+    margin-top: 247px;
 }
 #backgroud6{
     background: #060a1c;
     width: 100%;
 }
 #row{
-    margin-top: 50px;
+    margin-top: 211px;
+    padding-top: 200px;
 }
 #tech1{
     text-align: center;
@@ -78,4 +80,14 @@
 }
 .row ul{
     list-style-type: none;
+}
+.bp-well__decor-1{
+    position: absolute;
+    left: 0;
+    max-width: 90%;
+}
+.image{
+    position: absolute;
+    left: 30%;
+
 }
