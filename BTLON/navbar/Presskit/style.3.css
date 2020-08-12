@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    background-color: rgba(194, 194, 194,0.4);
+}
+#navbar ul li a{
+    color: white;
+    list-style-type: none;
+    display: block;
+}
+#nav{
+    margin: 20px;
+}
+#background1{
+    background-image: url(img/BackgroundTechgology.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#row nav{
+    background-color: #f4f4f4;
+    
+}
