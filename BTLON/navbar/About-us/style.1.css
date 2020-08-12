@@ -7,13 +7,18 @@
 #nav{
     margin: 20px;
 }
-#backgroud1{
-    background-image: url(img/BackgroundAbout.png);
-}
 img.cangiua{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 40px;
+}
+.text-center h2 b hr{
+    height: .375rem;
+    width: 6.125rem;
+    border-radius: .1875rem;
+    background-color: #59d9ca;
+
 }
 #text1{
     line-height: 2;
@@ -41,11 +46,27 @@ img.cangiua{
     background: url(img/japan-bg.png) 50% no-repeat;
     background-size: contain;
 }
+.btn-apply{
+    color: #4ec5b6;
+    border-radius: 3.125rem;
+    border: solid #4ec5b6;
+    padding: 1.5rem;
+}
+.text-lg{
+    font-size: 1.5625rem;
+}
+.btn-apply:hover{
+    color: white;
+    background: cadetblue;
+    border-radius: 3.125rem;
+    border: solid #4ec5b6;
+    padding: 1.5rem;
+    text-decoration: none;
+}
 #brackgroud5{
     background-image: url(img/SectionBackground-1.png);
     background-repeat: no-repeat;
-    width: 101%;
-    margin-top: 247px;
+    margin-top: 149px;
 }
 #form{
     border: .125rem solid #fff;
@@ -54,9 +75,22 @@ img.cangiua{
     background-color: transparent;
     margin: 10px;
     padding: 0.6rem;
-    
+}
+.button .btn-submit{
+    color: #5da5d0;
+    background: #fff;
+    height: 3.125rem;
+    font-size: 1.125rem;
+    border-radius: 1.5625rem;
+    padding: 0 3.125rem;
+    margin-bottom: 25px;
 }
 #backgroud6{
     background: #060a1c;
     width: 100%;
+}
+.col-md-9 a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
 }

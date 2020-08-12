@@ -38,10 +38,9 @@
   margin-top: 200px;
 }
 #brackgroud3{
-    background-image: url(img/SectionBackground.png);
+    background-image: url(img/SectionBackground.png) ;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
 }
 #brackgroud5{
     background-image: url(img/SectionBackground-1.png);
@@ -54,11 +53,17 @@
     width: 100%;
 }
 #row{
-    margin-top: 211px;
+    margin-top: 230px;
     padding-top: 200px;
 }
 #tech1{
     text-align: center;
+}
+#tech2  hr{
+    
+    height: .1875rem;
+    border-radius: .1875rem;
+    background-image: linear-gradient(9deg,#0e3672,#1a83a0 35%,#26d0ce);
 }
 #icon{
     text-align: center;
@@ -72,6 +77,15 @@
     margin: 10px;
     padding: 0.6rem;
     
+}
+.button .btn-submit{
+    color: #5da5d0;
+    background: #fff;
+    height: 3.125rem;
+    font-size: 1.125rem;
+    border-radius: 1.5625rem;
+    padding: 0 3.125rem;
+    margin-bottom: 25px;
 }
 .col-md-9 a{
     margin-left: 20px;
