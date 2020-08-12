@@ -16,6 +16,17 @@
 #background1{
     background-image: url(img/BackgroundTechgology.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#background2{
+    background-image: url(img/SectionBackground-1.png);
+    background-repeat: no-repeat;
+    margin-top: 149px;
+}
+#background3{
+    background: #060a1c;
+    width: 100%;
 }
 #row{
     text-align: center;
@@ -30,6 +41,31 @@
 #column{
     position: absolute;
     top:-210px;
-    left: 85px;
+    left: 215px;
 
+}
+#form{
+    border: .125rem solid #fff;
+    border-radius: 1.5625rem;
+    color: white;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0.6rem;   
+}
+.button .btn-submit{
+    color: #5da5d0;
+    background: #fff;
+    height: 3.125rem;
+    font-size: 1.125rem;
+    border-radius: 1.5625rem;
+    padding: 0 3.125rem;
+    margin-bottom: 25px;
+}
+.row ul{
+    list-style-type: none;
+}
+.col-md-9 a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
 }
