@@ -111,37 +111,49 @@
     <a href="" class="btn-apply text-lg"><b> ỨNG TUYỂN NGAY </b></a>
   </div>
   <div class="container-fluid" id="brackgroud5">
-    <form action="/action_page.php">
+    <form action="/action_page.php" class="needs-validation" novalidate>
       <div class="row" >
         <div class="col-sm-1"></div>
-        <div class="col-sm-5 "  style="margin-top: 100px; margin-right: 100px;">
+        <div class="col-sm-5 "  style="margin-top: 50px; margin-right: 100px; ">
           <div class="row">
             <div class="form-group" style="margin-left: 20px;">
-              <input type="text" placeholder="Họ" id="form" value size="20" >
+              <input type="text" placeholder="Họ" id="form" value size="20" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Trường thông tin bắt buộc</div>
             </div>
             <div class="form-group">
-              <input type="text" placeholder="Tên"id="form" value size="20">
+              <input type="text" placeholder="Tên"id="form" value size="20" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Trường thông tin bắt buộc</div>
             </div>
           </div>
           <div class="form-group"> 
             <label for=""></label>
-            <input type="text" placeholder=" Email"id="form" value size="50">
+            <input type="email" placeholder=" Email"id="form" value size="50" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Trường thông tin bắt buộc</div>
           </div>
           <div class="form-group">
             <label for=""></label>
-            <input type="text" placeholder=" Chủ đề"id="form" value size="50">
+            <input type="text" placeholder=" Chủ đề"id="form" value size="50" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Trường thông tin bắt buộc</div>
           </div>
           <div class="form-group">
-            <textarea name="" id="form" rows="9" cols="55" placeholder="Nội Dung"></textarea>
+            <textarea name="" id="form" rows="9" cols="55" placeholder="Nội Dung" required></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Trường thông tin bắt buộc</div>
           </div>
-          <div class="button" style="text-align: center; "> 
-            <button type="submit" class="btn-submit" >Gửi</button>
+          <div class="button" style="text-align: center;"> 
+            <button type="submit" class="btn-submit" style="text-align: center;">Gửi</button>
           </div>
-          
         </div>
         <div class="col-sm-4" style="text-align: right; color: white;" >
-          <h2 class="text-right" id="text-right" style="margin-top: 150px;"> <b> HÃY CHIA SẺ QUAN ĐIỂM <br> CHÚNG TÔI SẼ LẮNG NGHE <hr> </b></h2>
-          <h5 >  Nếu bạn có bất kì góp ý hay thắc mắc nào về YmeetMe, hãy liên hệ với chúng tôi qua mẫu này và YmeetMe sẽ phản hồi lại bạn sớm nhất có thể!</p>
+          <h2 style="margin-top: 150px;"> <b style="font-size: 1.95313rem; margin-bottom: 25px;"> HÃY CHIA SẺ QUAN ĐIỂM <br> CHÚNG TÔI SẼ LẮNG NGHE </b></h2>
+          <p style="line-height: 2;" >
+             Nếu bạn có bất kì góp ý hay thắc mắc nào về <br>
+             YmeetMe, hãy liên hệ với chúng tôi qua mẫu này <br>
+             và YmeetMe sẽ phản hồi lại bạn sớm nhất có thể!</p>
           </div>
         </div>
       </div>
@@ -219,5 +231,7 @@
     <div class="text-white text-center" style="padding-bottom: 60px;" > Game Changer, 2018</div>
   </div>
 </div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
