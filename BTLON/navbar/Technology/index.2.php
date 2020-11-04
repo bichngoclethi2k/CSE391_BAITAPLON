@@ -24,16 +24,16 @@
           <a href="" class="nav-link" id="navlogo"> <img src="img/Logo_white.png" alt=""></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\index.html" class="nav-link " id="nav"> <h4 > Ymeetme là gì </h4></a>
+          <a href="../../index.php" class="nav-link " id="nav"> <h4 > Ymeetme là gì </h4></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\navbar\About-us\index.1.html" class="nav-link " id="nav"> <h4> Về chúng tôi</h4></a>
+          <a href="../About-us/index.1.php" class="nav-link " id="nav"> <h4> Về chúng tôi</h4></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\navbar\Technology\index.2.html" class="nav-link" id="nav"> <h4> Công nghệ <hr style="height:2px;background-color:#59d9ca;" ></h4></a>
+          <a href="../Technology/index.2.php" class="nav-link" id="nav"> <h4> Công nghệ <hr style="height:2px;background-color:#59d9ca;" ></h4></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\navbar\Presskit\index.3.html" class="nav-link " id="nav"> <h4> Presskit</h4></a>
+          <a href="../Presskit/index.3.php" class="nav-link " id="nav"> <h4> Presskit</h4></a>
         </li>
       </ul>
     </nav>

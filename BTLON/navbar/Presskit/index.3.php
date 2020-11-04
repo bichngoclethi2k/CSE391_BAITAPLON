@@ -24,16 +24,16 @@
           <a href="" class="nav-link" id="navlogo"> <img src="img/Logo_white.png" alt=""></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\index.html" class="nav-link " id="nav"> <h4 > Ymeetme là gì </h4></a>
+          <a href="../../index.php" class="nav-link " id="nav"> <h4 > Ymeetme là gì </h4></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\navbar\About-us\index.1.html" class="nav-link " id="nav"> <h4> Về chúng tôi</h4></a>
+          <a href="../About-us/index.1.php" class="nav-link " id="nav"> <h4> Về chúng tôi</h4></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\navbar\Technology\index.2.html" class="nav-link" id="nav"> <h4> Công nghệ </h4></a>
+          <a href="../Technology/index.2.php" class="nav-link" id="nav"> <h4> Công nghệ </h4></a>
         </li>
         <li class="nav-item">
-          <a href="D:\desktop\CSE391_BAITAPLON\BTLON\navbar\Presskit\index.3.html" class="nav-link " id="nav"> <h4> Presskit <hr style="height:2px;background-color:#59d9ca;" ></h4></a>
+          <a href="../Presskit/index.3.php" class="nav-link " id="nav"> <h4> Presskit <hr style="height:2px;background-color:#59d9ca;" ></h4></a>
         </li>
       </ul>
     </nav>
@@ -47,13 +47,13 @@
                       <a class="nav-link active" href="#" data-toggle="tab">Giới thiệu</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="navPresskit/Media/index.3.1.html" data-toggle="tab">Media</a>
+                      <a class="nav-link" href="navPresskit/Media/index.3.1.php" data-toggle="tab">Media</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="navPresskit/TruyenThongNoiGi/index.3.2.html" data-toggle="tab">Truyền thông nói gì?</a>
+                      <a class="nav-link" href="navPresskit/TruyenThongNoiGi/index.3.2.php" data-toggle="tab">Truyền thông nói gì?</a>
                   </li>
                   <li class="nav-item" style="padding-bottom: 2250px;">
-                      <a class="nav-link" href="navPresskit/LienHe/index.3.3.html" data-toggle="tab">Liên hệ</a>
+                      <a class="nav-link" href="navPresskit/LienHe/index.3.3.php" data-toggle="tab">Liên hệ</a>
                   </li>
               </ul>
           </div>

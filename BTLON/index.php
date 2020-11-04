@@ -27,13 +27,13 @@
           <a href="#" class="nav-link " id="nav"> <h4 > Ymeetme là gì <hr style="height:2px;background-color:#59d9ca;" ></h4></a>
         </li>
         <li class="nav-item">
-          <a href="navbar/About-us/index.1.html" class="nav-link " id="nav"> <h4> Về chúng tôi</h4></a>
+          <a href="navbar/About-us/index.1.php" class="nav-link " id="nav"> <h4> Về chúng tôi</h4></a>
         </li>
         <li class="nav-item">
-          <a href="navbar/Technology/index.2.html" class="nav-link" id="nav"> <h4> Công nghệ</h4></a>
+          <a href="navbar/Technology/index.2.php" class="nav-link" id="nav"> <h4> Công nghệ</h4></a>
         </li>
         <li class="nav-item">
-          <a href="navbar/Presskit/index.3.html" class="nav-link " id="nav"> <h4> Presskit</h4></a>
+          <a href="navbar/Presskit/index.3.php" class="nav-link " id="nav"> <h4> Presskit</h4></a>
         </li>
       </ul>
     </nav>
