@@ -7,28 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    html,body{
+      font-family:'Times New Roman', Times, serif;;
+    }
+  </style>
   </head>
 
   <body>
-    <br>
 
    <nav class="navbar navbar-expand-sm bg-dark ">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link text-white" href="form.php">Trang Chủ</a>
+        <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="user.php">User</a>
+        <a class="nav-link text-white" style="font-size: 18px;margin:22px"href="user.php"><b> User</b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="search.php">Tìm Kiếm </a>
+        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#">Đăng Xuất</a>
+      <li>
+        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:900px; color:aliceblue; " ></i></a>
       </li>
       
     </ul>

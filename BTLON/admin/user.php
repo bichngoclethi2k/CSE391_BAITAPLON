@@ -17,27 +17,32 @@ $result=mysqli_query($conn,$sql);
     <link rel="shortcut icon" href="../img/favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    html,body{
+      font-family:'Times New Roman', Times, serif;;
+    }
+  </style>
   </head>
   <body>
   <nav class="navbar navbar-expand-sm bg-dark ">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link text-white" href="form.php">Trang Chủ</a>
+        <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="user.php">User</a>
+        <a class="nav-link text-white" style="font-size: 18px;margin:22px"href="user.php"><b> User</b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="search.php">Tìm kiếm </a>
+        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#">Đăng xuất</a>
+      <li>
+        <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:850px; color:aliceblue; font-size: 18px " ></i></a>
       </li>
-
       
     </ul>
 
-    </nav> <br>
+  </nav> 
+ <br>
   <div class="container">
   
     <div class="text-center">
