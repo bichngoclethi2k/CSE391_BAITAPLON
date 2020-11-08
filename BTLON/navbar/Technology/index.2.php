@@ -1,3 +1,40 @@
+<?php
+require_once('../../admin/config.php');
+ 
+if(!empty($_POST)){
+    $id=$ho=$ten=$email=$chude=$noidung='';
+    if(isset($_POST['id'])){
+        $id=$_POST['id'];
+    }
+    if(isset($_POST['ho'])){
+        $ho=$_POST['ho'];
+    }
+
+    if(isset($_POST['ten'])){
+        $ten=$_POST['ten'];
+    }
+
+    if(isset($_POST['email'])){
+        $email=$_POST['email'];
+    }
+    if(isset($_POST['chude'])){
+        $chude=$_POST['chude'];
+    }
+    if(isset($_POST['noidung'])){
+        $noidung=$_POST['noidung'];
+    }
+    
+    $sql="INSERT INTO user(id,ho,ten,email,chude,noidung) 
+    value('$id','$ho','$ten','$email','$chude','$noidung')";
+    if (mysqli_query($conn, $sql)) {
+        ?><script> alert('Thêm Dữ Liệu Thành Công');</script><?php
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+} 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,41 +171,41 @@
     </div>
   </div>
   <div class="container-fluid" id="background2">
-    <form action="/action_page.php" class="needs-validation" novalidate>
+    <form action="" method="post" class="needs-validation" novalidate>
       <div class="row" >
         <div class="col-sm-1"></div>
         <div class="col-sm-5 "  style="margin-top: 50px; margin-right: 100px; ">
           <div class="row">
             <div class="form-group" style="margin-left: 20px;">
-              <input type="text" placeholder="Họ" id="form" value size="20" required>
+              <input type="text" name="ho" placeholder="Họ" id="form" value size="20" required>
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Trường thông tin bắt buộc</div>
             </div>
             <div class="form-group">
-              <input type="text" placeholder="Tên"id="form" value size="20" required>
+              <input type="text" name="ten" placeholder="Tên"id="form" value size="20" required>
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Trường thông tin bắt buộc</div>
             </div>
           </div>
           <div class="form-group"> 
             <label for=""></label>
-            <input type="email" placeholder=" Email"id="form" value size="50" required>
+            <input type="email" name="email" placeholder=" Email"id="form" value size="50" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Trường thông tin bắt buộc</div>
           </div>
           <div class="form-group">
             <label for=""></label>
-            <input type="text" placeholder=" Chủ đề"id="form" value size="50" required>
+            <input type="text" name="chude" placeholder=" Chủ đề"id="form" value size="50" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Trường thông tin bắt buộc</div>
           </div>
           <div class="form-group">
-            <textarea name="" id="form" rows="9" cols="55" placeholder="Nội Dung" required></textarea>
+            <textarea name="noidung" id="form" rows="9" cols="55" placeholder="Nội Dung" required></textarea>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Trường thông tin bắt buộc</div>
           </div>
           <div class="button" style="text-align: center;"> 
-            <button type="submit" class="btn-submit" style="text-align: center;">Gửi</button>
+            <button type="submit" name="save" class="btn-submit" style="text-align: center;">Gửi</button>
           </div>
         </div>
         <div class="col-sm-4" style="text-align: right; color: white;" >
