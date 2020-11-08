@@ -59,40 +59,47 @@ if(!empty($_POST)){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <div class="text-center">
-        <h3>Them Moi</h3>
-        <form action="" method="post">
-        
-             <div class="form-group">
-                <label for="">Id</label>
-                <input type="number"  id="id" name="id">
-            </div> 
-            <div class="form-group">
-                <label for="">Họ </label>
-                <input type="text" id="ho" name="ho">
-            </div>
-            <div class="form-group">
-                <label for="">Tên</label>
-                <input type="text" id="ten" name="ten">
-            </div>
-            <div class="form-group">
-                <label for="">Email</label>
-                <input type="text"  id="email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="">Chủ Đề</label>
-                <input type="text" id="chude" name="chude"  >
-            </div>
-            <div class="form-group">
-                <label for="">Nội Dung</label>
-                <textarea name="noidung" id="noidung" rows="4" cols="25" ></textarea>
-            </div>
-            <button name="save" >Save</button>
-            <a href="user.php"  class="btn btn-primary">Back</a>
-        
-        </form>
-        
-        
+      <div class="container h-100 mt-3">
+        <div class="row h-100 justify-content-center ">
+            <form action="" method="post">
+                <h2>THÊM MỚI</h2><br>
+                <table>
+                    <tr>
+                        <td><label for=""><b>Id :</b></label></td>
+                        <td><input type="number"  id="id" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td><label for=""><b>Họ :</b></label></td>
+                        <td><input type="text" id="ho" name="ho"></td>
+                    </tr>
+                    <tr>
+                        <td><label for=""><b>Tên :</b></label></td>
+                        <td><input type="text" id="ten" name="ten"></td>
+                    </tr>
+                    <tr>
+                        <td><label for=""><b>Email :</b></label></td>
+                        <td><input type="text"  id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for=""><b>Chủ Đề :</b></label></td>
+                        <td><input type="text" id="chude" name="chude"  ></td>
+                    </tr>
+                    <tr>
+                        <td><label for=""><b>Nội Dung :</b></label></td>
+                        <td><textarea name="noidung" id="noidung" rows="4" cols="25" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button name="save" class="btn btn-primary" >Save</button>
+                        </td>
+                        <td>
+                            <a href="user.php"  class="btn btn-outline-secondary">Back</a>
+                        </td>
+                    </tr>
+                </table>
+            
+            </form>
+        </div>
       </div>
 
     <!-- Optional JavaScript -->

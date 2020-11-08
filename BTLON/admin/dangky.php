@@ -13,29 +13,33 @@ require_once("config.php");
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <h2> TRang Dang ky</h2>
-      <form action="dangky_submit.php" method="post">
-        <table>
-                <tr>
-                    <td>tên đăng nhập</td>
-                    <td> <input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td>Mật Khẩu</td>
-                    <td><input type="password" name="pass" id=""></td>
-                </tr>
-                <tr>
-                    <td>Nhập lại mật khẩu</td>
-                    <td><input type="password" name="repass" id=""></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="submit" name="submit"> Đăng ký</button>
-                        <button type="reset">Reset</button>
-                    </td>
-                </tr>
-        </table>
-      </form>
+    <div class="container h-100 mt-3">
+      <div class="row h-100 justify-content-center ">
+          <form  action="dangky_submit.php" method="post">
+            <h2> ĐĂNG KÝ </h2><br>
+            <table>
+                    <tr>
+                        <td><b>Tên Đăng Nhập : </b></td>
+                        <td> <input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mật Khẩu :</b></td>
+                        <td><input type="password" name="pass" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><b>Nhập lại mật khẩu : </b></td>
+                        <td><input type="password" name="repass" id=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" name="submit" class="btn btn-secondary"> Sign up </button>
+                            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                        </td>
+                    </tr>
+            </table>
+          </form>
+      </div>
+    </div>
      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

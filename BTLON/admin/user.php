@@ -1,7 +1,7 @@
 <?php
 require('config.php');
 $sql= "SELECT * FROM user";
-$result=mysqli_query($conn,$sql);
+$result= mysqli_query($conn,$sql);
 
 ?>
 <!-- <script>alert('ban da dang nhap thanh cong');</script> -->
@@ -24,7 +24,7 @@ $result=mysqli_query($conn,$sql);
   </style>
   </head>
   <body>
-  <nav class="navbar navbar-expand-sm bg-dark ">
+  <nav class="navbar navbar-expand-sm bg-secondary ">
     <ul class="navbar-nav ">
       <li class="nav-item">
         <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
@@ -50,7 +50,7 @@ $result=mysqli_query($conn,$sql);
       <h1>QUẢN LÝ USER</h1> <br> 
       
     </div>
-    <table boder=1 class="table table-striped ">
+    <table class="table table-bordered table-striped ">
       <tr>
         
         <th>id</th>
@@ -59,21 +59,20 @@ $result=mysqli_query($conn,$sql);
         <th>email</th>
         <th>chude</th>
         <th>noidung</th>
-        <th></th>
-        <th></th>
+
       </tr>
       
       <?php
-        while($row=mysqli_fetch_assoc($result)){
-          ?>
+        while($row = mysqli_fetch_assoc($result)){
+      ?>
             <tr>
                 
-                <td><?php echo $row['id'];?></td>
-                <td><?php echo $row['ho'];?></td>
-                <td><?php echo $row['ten'];?></td>
-                <td><?php echo $row['email'];?></td>
-                <td><?php echo $row['chude'];?></td>
-                <td><?php echo $row['noidung'];?></td>
+                <td><?php echo $row ['id']; ?></td>
+                <td><?php echo $row ['ho']; ?></td>
+                <td><?php echo $row ['ten']; ?></td>
+                <td><?php echo $row ['email']; ?></td>
+                <td><?php echo $row ['chude']; ?></td>
+                <td><?php echo $row ['noidung']; ?></td>
                 <td><button onclick="window.open('edit.php?id=<?php echo $row['id']; ?>','_self')">edit</button></td>
                 <td><button onclick="window.open('del.php?id=<?php echo $row['id']; ?>','_self')">delete</button></td>
             </tr>
@@ -84,7 +83,7 @@ $result=mysqli_query($conn,$sql);
          
         </table>
         
-        <button onclick="window.open('add.php' ,'_self' )">Them moi</button>
+        <button onclick="window.open('add.php' ,'_self' ) " class="btn btn-primary">Add</button>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -20,7 +20,7 @@
 
   <body>
 
-   <nav class="navbar navbar-expand-sm bg-dark ">
+   <nav class="navbar navbar-expand-sm bg-secondary ">
     <ul class="navbar-nav ">
       <li class="nav-item">
         <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
@@ -32,7 +32,7 @@
         <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
       <li>
-        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:900px; color:aliceblue; " ></i></a>
+        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:850px; color:aliceblue; " ></i></a>
       </li>
       
     </ul>

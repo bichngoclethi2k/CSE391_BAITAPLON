@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 $sql= "SELECT * FROM dangnhap";
-$result=mysqli_query($conn,$sql);
+$result= mysqli_query($conn,$sql);
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,15 +15,26 @@ $result=mysqli_query($conn,$sql);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <div class="conatiner">
-        <form action="login_submit.php" method="post">
-            <label for="">tài khoản</label>
-            <input type="text" name="name"> <br>
-            <label for="">mật khẩu</label> 
-            <input type="password" name="pass" id="">
-           <button type="submit" name="submit">dang nhap</button>
-            <input type="reset" value="reset">
-        </form>
+      <div class="container h-100 mt-3">
+        <div class="row h-100 justify-content-center ">
+          <form action="login_submit.php" method="post">
+              <h2>ĐĂNG NHẬP</h2><br>
+              <table>
+                <tr>
+                  <td><label for=""><b>Account :  </b></label></td>
+                  <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                  <td><label for=""><b>Password :</b></label></td>
+                  <td><input type="password" name="pass" id=""></td>
+                </tr>
+                <tr>
+                  <td><button type="submit" name="submit" class="btn btn-secondary">Login</button></td>
+                  <td><input type="reset" value="Reset" class="btn btn-outline-secondary"></td>
+                </tr>
+              </table>
+          </form>
+        </div>
 
       </div>
     <!-- Optional JavaScript -->

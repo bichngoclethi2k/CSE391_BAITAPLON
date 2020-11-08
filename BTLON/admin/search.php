@@ -4,7 +4,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Search</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,10 +14,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
     <body>
+        <nav class="navbar navbar-expand-sm bg-secondary ">
+        <ul class="navbar-nav ">
+        <li class="nav-item">
+            <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" style="font-size: 18px;margin:22px"href="user.php"><b> User</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
+        </li>
+        <li>
+            <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:850px; color:aliceblue; " ></i></a>
+        </li>
+        
+        </ul>
+
+        </nav><br>
         <div class="text-center">
             <form action="search.php" method="get">
-                Search: <input type="text" name="search" />
-                <input type="submit" name="ok" value="search" />
+                Search: <input type="text" name="search" placeholder="Enter name" />
+                <input type="submit" name="ok" value="search" class="btn btn-primary" />
             </form>
         </div>
         <?php
