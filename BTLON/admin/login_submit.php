@@ -12,7 +12,7 @@ if (isset($_POST["submit"]) && $_POST['name']!=''&& $_POST['pass'] !=''){
         header("location:form.php");
     }
     else{
-        echo" ban nhap sai ";
+        echo "<script>alert('Bạn nhập sai password or name!'); window.location='index.php'</script>";
     }
 }
 else{

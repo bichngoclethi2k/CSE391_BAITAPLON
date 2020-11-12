@@ -35,8 +35,11 @@ $result= mysqli_query($conn,$sql);
       <li class="nav-item">
         <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="new_post.php"><b> Đăng Bài</b> </a>
+      </li>
       <li>
-        <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:850px; color:aliceblue; font-size: 18px " ></i></a>
+        <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:750px; color:aliceblue; font-size: 21px " ></i></a>
       </li>
       
     </ul>
@@ -59,7 +62,8 @@ $result= mysqli_query($conn,$sql);
         <th>email</th>
         <th>chude</th>
         <th>noidung</th>
-
+        <th></th>
+        <th></th>
       </tr>
       
       <?php

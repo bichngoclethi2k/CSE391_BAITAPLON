@@ -1,3 +1,9 @@
+<?php
+require('../../../../admin/config.php');
+$sql= "SELECT * FROM baiviet";
+$result= mysqli_query($conn,$sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,9 +73,24 @@
                     </div>
                   </div>
               </div>
+              <div>
+                <?php
+                while($row = mysqli_fetch_assoc($result)){?>
+                  <hr>
+                  <h3 style="text-align: center;"><b><?php echo $row ['chude']; ?></b> </h3>
+                  <h5><?php echo $row['noidung'];  ?></h5>
+                  <img src="<?php echo 'http://localhost/CSE485_BAITAPLON/BTLON/img/'.$row['hinhanh']?>" width="100%" alt="">
+                
+                
+                  <?php } ?>
+                
+              </div>
           </div>
+          
+          
       </div>
   </div>
+  
   <div class="container-fluid" id="background1">
     <div class="row">
       <div class="col-md-3 mt-3">

@@ -8,11 +8,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+    <style>
+    html,body{
+      font-family:'Times New Roman', Times, serif;;
+    }
+  </style>
+</head>
     <body>
         <nav class="navbar navbar-expand-sm bg-secondary ">
         <ul class="navbar-nav ">
@@ -25,8 +30,11 @@
         <li class="nav-item">
             <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="new_post.php"><b> Đăng Bài</b> </a>
+      </li>
         <li>
-            <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:850px; color:aliceblue; " ></i></a>
+            <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:750px; color:aliceblue;font-size: 21px  " ></i></a>
         </li>
         
         </ul>

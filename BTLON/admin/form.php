@@ -31,8 +31,11 @@
       <li class="nav-item">
         <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="new_post.php"><b> Đăng Bài</b> </a>
+      </li>
       <li>
-        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:850px; color:aliceblue; " ></i></a>
+        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:800px; color:aliceblue; " ></i></a>
       </li>
       
     </ul>
