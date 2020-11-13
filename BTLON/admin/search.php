@@ -19,7 +19,7 @@
   </style>
 </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-secondary ">
+        <nav class="navbar navbar-expand-sm " style="background:#34626c;">
         <ul class="navbar-nav ">
         <li class="nav-item">
             <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
@@ -31,8 +31,8 @@
             <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="new_post.php"><b> Đăng Bài</b> </a>
-      </li>
+            <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="post.php"><b> Bài Đăng</b> </a>
+        </li>
         <li>
             <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:750px; color:aliceblue;font-size: 21px  " ></i></a>
         </li>
@@ -40,10 +40,11 @@
         </ul>
 
         </nav><br>
+    <div class="container">
         <div class="text-center">
             <form action="search.php" method="get">
-                Search: <input type="text" name="search" placeholder="Enter name" />
-                <input type="submit" name="ok" value="search" class="btn btn-primary" />
+                 <input type="text" name="search" placeholder="Enter name" />
+                <input type="submit" name="ok" value="Search" class="btn text-white " style="background: #839b97;" > 
             </form>
         </div>
         <?php
@@ -63,19 +64,19 @@
                 $row=mysqli_fetch_assoc($result);
                 $num= mysqli_num_rows($result);
                 if ($row > 0 && $search != "") 
-                {
-                     echo " ket qua tra ve voi tu khoa <b>$search</b>"; 
+                {  
+                     echo " Ket qua tra ve voi tu khoa <b>$search</b>"; 
                    ?> 
                    <table  class="table table-striped ">
                         <tr>
-                            <th>id</th>
-                            <th>ho</th>
-                            <th>ten</th>
-                            <th>email</th>
-                            <th>chude</th>
-                            <th>noidung</th>
-                            <th></th>
-                            <th></th>
+                            <th>Id</th>
+                            <th>Họ</th>
+                            <th>Tên</th>
+                            <th>Email</th>
+                            <th>Chủ Đề</th>
+                            <th>Nội Dung</th>
+                            
+                            
                         </tr>
                     <?php
                     while($row=mysqli_fetch_assoc($result)) {
@@ -87,19 +88,19 @@
                         <td><?php echo $row['email'];?></td>
                         <td><?php echo $row['chude'];?></td>
                         <td><?php echo $row['noidung'];?></td>
-                        <td><button onclick="window.open('edit.php?id=<?php echo $row['id']; ?>','_self')">edit</button></td>
-                        <td><button onclick="window.open('del.php?id=<?php echo $row['id']; ?>','_self')">delete</button></td>
+                        
                     </tr>
                 <?php
                     }
                 
                  } 
                 else {
-                    echo "Khong tim thay ket qua!";
+                    echo "<script>alert('Không Tìm Thấy Kết Quả!'); window.location='search.php'</script>";
                 }
             }
         }
         ?>   
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -23,23 +23,16 @@ if(!empty($_POST)){
     if(isset($_POST['noidung'])){
         $noidung=$_POST['noidung'];
     }
-/*     $id=str_replace('\'','\\\'',$id);
-    $address=str_replace('\'','\\\'',$address);
-    $name=str_replace('\'','\\\'',$name);
-    $email=str_replace('\'','\\\'',$email);
-    $gender=str_replace('\'','\\\'',$gender); */
     
     $sql="INSERT INTO user(id,ho,ten,email,chude,noidung) 
     value('$id','$ho','$ten','$email','$chude','$noidung')";
     
-    echo ' Dữ liệu bạn vừa thêm là :'.'<br>'.' id: '.$id .'<br>'.'ho:'.$ho .'<br>'
-    .'ten:' .$ten .'<br>'.'email:'.$email.'<br>'.' chude:'.$chude.'<br>'.'noidung'.$noidung;
     if (mysqli_query($conn, $sql)) {
         ?><script> alert('Thêm Dữ Liệu Thành Công');</script><?php
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-    /* header('location: index.php'); */
+    
 
 } 
 
@@ -59,41 +52,41 @@ if(!empty($_POST)){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <div class="container h-100 mt-3">
+      <div class="container h-100 pt-3">
         <div class="row h-100 justify-content-center ">
             <form action="" method="post">
                 <h2>THÊM MỚI</h2><br>
                 <table>
                     <tr>
                         <td><label for=""><b>Id :</b></label></td>
-                        <td><input type="number"  id="id" name="id"></td>
+                        <td><input type="number"  id="id" name="id"required></td>
                     </tr>
                     <tr>
                         <td><label for=""><b>Họ :</b></label></td>
-                        <td><input type="text" id="ho" name="ho"></td>
+                        <td><input type="text" id="ho" name="ho"required></td>
                     </tr>
                     <tr>
                         <td><label for=""><b>Tên :</b></label></td>
-                        <td><input type="text" id="ten" name="ten"></td>
+                        <td><input type="text" id="ten" name="ten"required></td>
                     </tr>
                     <tr>
                         <td><label for=""><b>Email :</b></label></td>
-                        <td><input type="text"  id="email" name="email"></td>
+                        <td><input type="text"  id="email" name="email"required></td>
                     </tr>
                     <tr>
                         <td><label for=""><b>Chủ Đề :</b></label></td>
-                        <td><input type="text" id="chude" name="chude"  ></td>
+                        <td><input type="text" id="chude" name="chude" required ></td>
                     </tr>
                     <tr>
                         <td><label for=""><b>Nội Dung :</b></label></td>
-                        <td><textarea name="noidung" id="noidung" rows="4" cols="25" ></textarea></td>
+                        <td><textarea name="noidung" id="noidung" rows="4" cols="25" required></textarea></td>
                     </tr>
                     <tr>
                         <td>
-                            <button name="save" class="btn btn-primary" >Save</button>
+                            <button name="save" class="btn text-white" style="background: #839b97;">Save</button>
                         </td>
                         <td>
-                            <a href="user.php"  class="btn btn-outline-secondary">Back</a>
+                            <a href="user.php"  class="btn text-white " style="background:#34626c">Back</a>
                         </td>
                     </tr>
                 </table>

@@ -55,8 +55,8 @@ if(!empty($_POST)){
 </head>
 <body>
   <div class="bg-image img1">
-    <nav class="navbar navbar-expand-sm  fixed-top pt-3 " id="navbar" >
-      <ul class="navbar-nav" >
+    <nav class="navbar navbar-expand-sm  fixed-top pt-3 col" id="navbar" >
+      <ul class="navbar-nav col" >
         <li class="nav-item">
           <a href="" class="nav-link" id="navlogo"> <img src="img/Logo_white.png" alt=""></a>
         </li>
@@ -213,7 +213,7 @@ if(!empty($_POST)){
     <div class="row">
       <div class="col-sm-6">
         <p style="background: #f5f5f5; color: #9e9593;">Đã gặp 1 bạn nữa ngang tuổi, rất dễ thương và nghiêm túc, tuy 1 lần thôi nhưng có sự tin tương về web này</p>
-        <div class="img" style="text-align: center;">
+        <div class="img " style="text-align: center;">
           <img src="img/Male-user.png" alt="" >
           <div class="text-md text-danger">VĂN NHẤT</div>
           <div class="text-sm text-center text-muted">TP Hồ Chí Minh</div>

@@ -14,7 +14,7 @@ require_once("config.php");
   </head>
   <body>
     <div class="container h-100 mt-3">
-      <div class="row h-100 justify-content-center ">
+      <div class="row h-100 justify-content-center "style="margin-top: 150px;">
           <form  action="dangky_submit.php" method="post">
             <h2> ĐĂNG KÝ </h2><br>
             <table>

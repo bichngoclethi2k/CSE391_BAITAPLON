@@ -15,13 +15,24 @@
     html,body{
       font-family:'Times New Roman', Times, serif;;
     }
+    @media screen and (max-width:600px){
+      .navbar-nav a {
+        float: none;
+      }
+    }
+    @media screen and (max-width:600px){
+      img {
+        width:70%;
+        text-align: center;
+      }
+    }
   </style>
   </head>
 
   <body>
 
-   <nav class="navbar navbar-expand-sm bg-secondary ">
-    <ul class="navbar-nav ">
+   <nav class="  navbar navbar-expand-sm   "style="background:#34626c;">
+    <ul class=" navbar-nav ">
       <li class="nav-item">
         <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
       </li>
@@ -32,15 +43,18 @@
         <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="new_post.php"><b> Đăng Bài</b> </a>
+        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="post.php"><b> Bài Đăng</b> </a>
       </li>
       <li>
+    
         <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:800px; color:aliceblue; " ></i></a>
       </li>
       
-    </ul>
+    </ul >
 
     </nav> 
+    <div class="img" style="text-align: center;margin-top: 200px;"><img src="../img/admin3.jpg" alt=""></div>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

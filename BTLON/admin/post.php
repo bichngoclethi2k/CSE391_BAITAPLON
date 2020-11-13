@@ -24,7 +24,7 @@ $result= mysqli_query($conn,$sql);
   </style>
   </head>
   <body>
-  <nav class="navbar navbar-expand-sm bg-secondary ">
+  <nav class="navbar navbar-expand-sm "style="background:#34626c;">
     <ul class="navbar-nav ">
       <li class="nav-item">
         <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
@@ -57,12 +57,12 @@ $result= mysqli_query($conn,$sql);
     <table class="table table-bordered table-striped ">
       <tr>
         
-        <th>id</th>
-        <th>chude</th>
-        <th>noidung</th>
-        <th>hinhanh</th>
-        <th>tacgia</th>
-        <th>thoigiandang</th>
+        <th>Id</th>
+        <th>Chủ Đề</th>
+        <th>Nội Dung</th>
+        <th>Hình Ảnh</th>
+        <th>Tác Giả</th>
+        <th>Thời Gian Đăng</th>
         <th></th>
         <th></th>
       </tr>
@@ -71,15 +71,15 @@ $result= mysqli_query($conn,$sql);
         while($row = mysqli_fetch_assoc($result)){
       ?>
             <tr>
-                
+
                 <td><?php echo $row ['id']; ?></td>
                 <td><?php echo $row ['chude']; ?></td>
                 <td><?php echo $row ['noidung']; ?></td>
-                <td><?php echo $row ['hinhanh']; ?></td>
+                <td><img src="<?php echo 'http://localhost/CSE485_BAITAPLON/BTLON/img/'.$row['hinhanh']?>" width="200px" alt=""></td>
                 <td><?php echo $row ['tacgia']; ?></td>
                 <td><?php echo $row ['thoigiandang']; ?></td>
-                <td><button onclick="window.open('edit_post.php?id=<?php echo $row['id']; ?>','_self')">edit</button></td>
-                <td><button onclick="window.open('del_post.php?id=<?php echo $row['id']; ?>','_self')">delete</button></td>
+                <td><button onclick="window.open('edit_post.php?id=<?php echo $row['id']; ?>','_self')"style="background: #c6b497;" class="btn text-white">Edit</button></td>
+                <td><button onclick="window.open('del_post.php?id=<?php echo $row['id']; ?>','_self')"style="background: #c6b497;" class="btn text-white">Delete</button></td>
             </tr>
             
           <?php 
@@ -88,7 +88,7 @@ $result= mysqli_query($conn,$sql);
          
         </table>
         
-        <button onclick="window.open('new_post.php' ,'_self' ) " class="btn btn-primary">Thêm Bài Viết Mới</button>
+        <button onclick="window.open('new_post.php' ,'_self' ) " class="btn text-white "style="background: #839b97;">New Post</button>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

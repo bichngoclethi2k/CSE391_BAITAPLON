@@ -10,48 +10,54 @@ $row=mysqli_fetch_assoc($query);
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    html,body{
+      font-family:'Times New Roman', Times, serif;
+    }
+  </style> 
   </head>
   <body>
-  <div class="text-center">
-        <h3>Sửa Bài Viết</h3>
+  <div class="container h-100 " style="margin-top: 40px;">
+    <div class="row h-100 justify-content-center ">
         <form action="" method="post">
-            <div class="form-group">
-                <label for="">Id</label>
-                <input type="number"  id="id" name="id"value="<?php echo $row['id'] ; ?>">
-            </div>
-              
-			<div class="form-group">
-                <label for="">Chủ Đề</label>
-                <input type="text"  id="id" name="chude"value="<?php echo $row['chude'] ; ?>">
-            </div>
-					    
-			<div class="form-group">
-                <label for="">Nội Dung</label>
-                <input type="text"  id="id" name="noidung"value="<?php echo $row['noidung'] ; ?>">
-            </div>
-                
-			<div class="form-group">
-				<label for="">Hình Ảnh</label>
-				<input type="file"  id="" name="hinhanh"value="<?php echo $row['noidung'] ; ?>">
-            </div>
-
-            <div class="form-group">
-                <label for="">Tác Giả</label>
-                <input type="text"  id="id" name="tacgia"value="<?php echo $row['tacgia'] ; ?>">
-            </div>
-
-            <div class="form-group">
-                <label for="">Thời Gian Đăng</label>
-                <input type="datetime-local"  id="id" name="thoigiandang"value="<?php echo $row['thoigiandang'] ; ?>">
-            </div>
-            <button name='update'>Save</button>
-            <a href="post.php"  class="btn btn-primary">Back</a>
+          <h2 style="text-align: center;"><b> Sửa Bài Viết </b></h2> <br>
+          <table>
+            <tr>
+              <td><label for=""><b>Id</b></label></td>
+              <td><input type="number"  id="id" name="id"value="<?php echo $row['id'] ;?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b> Chủ Đề</b></label></td>
+              <td><input type="text"  id="chude" name="chude"value="<?php echo $row['chude'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b> Nội Dung</b></label></td>
+              <td><input type="text"  id="noidung" name="noidung"value="<?php echo $row['noidung'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b> Hình Ảnh</b></label></td>
+              <td><input type="file"  id="" name="hinhanh"value="<?php echo $row['noidung'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b> Tác Giả</b></label></td>
+              <td><input type="text"  id="tacgia" name="tacgia"value="<?php echo $row['tacgia'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b> Thời Gian Đăng </b></label></td>
+              <td><input type="datetime-local"  id="id" name="thoigiandang"value="<?php echo $row['thoigiandang'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><button name='update' class="btn text-white" style="font-size: 15px; background: #34626c;">Save</button></td>
+              <td><a href="post.php"  class="btn text-white" style="font-size: 15px; background: #839b97;">Back</a></td>
+            </tr>
+            
             <?php
                 if (isset($_POST['update'])){
                 $id=$_GET['id'];
@@ -79,7 +85,7 @@ $row=mysqli_fetch_assoc($query);
                 ?>
            <!--  <button>quaylai</button> -->
         </form>
-        
+    </div> 
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

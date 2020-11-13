@@ -52,70 +52,55 @@ if(!empty($_POST)){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
     html,body{
-      font-family:'Times New Roman', Times, serif;;
+      font-family:'Times New Roman', Times, serif;
     }
   </style> 
 </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-secondary ">
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" style="font-size: 18px;margin:22px"href="user.php"><b> User</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="new_post.php"><b> Đăng Bài</b> </a>
-      </li>
-      <li>
-        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:800px; color:aliceblue; " ></i></a>
-      </li>
-      
-    </ul>
-
-    </nav> 
-	<div class="container" style="width:100%; max-width:900px; ">
-		<div class="panel panel-default">
-				<div class="panel-heading"><h3><b> Tạo Bài Viết </b></h3></div>
+   
+	<div class="container pt-3" style="width:100%; max-width:900px;margin-top: 30px; ">
+		<div class="panel panel-default" >
+				<div class="panel" style="background: #d9e4dd;text-align: center; padding: 30px; "><h1><b> Tạo Bài Viết </b></h1></div>
 				<div class="panel-body" >
 					<form action="" method="post">
 						
 							<div class="form-group" >
-								<label>ID Bài Viết</label>
+								<label><h3> <b> ID Bài Viết </b></h3> </label>
 								<input type="text" name="id" class="form-control" required />
               </div>
               
 							<div class="form-group">
-								<label>Chủ Đề Bài Viết</label>
+								<label> <h3><b> Chủ Đề Bài Viết</b></h3></label>
 								<input type="text" name="chude" class="form-control" required />
 							</div>
 					    
 							<div class="form-group">
-    							<label for="exampleFormControlTextarea1">Nội Dung Bài Viết</label>
-    							<textarea class="form-control" id="exampleFormControlTextarea1" rows="7" name="noidung"></textarea>
+    							<label for=""><h3><b>Nội Dung Bài Viết</b></h3> </label>
+    							<textarea class="form-control" id="" rows="7" name="noidung"required></textarea>
               </div>
                 
 							<div class="form-group">
-							    <label for="exampleFormControlFile1">Hình Ảnh</label>
-							    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="hinhanh">
+							    <label for="exampleFormControlFile1"><h3><b>Hình Ảnh</b></h3> </label>
+							    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="hinhanh" style="font-size: 15px">
               </div>
 
               <div class="form-group">
-								<label>Tác Giả</label>
+								<label><h3><b> Tác Giả</b></h3></label>
 								<input type="text" name="tacgia"s class="form-control" required />
               </div>
               
 		          <div class="form-group" >
-                <input type="submit" name="new_post" id="register" value="Tạo bài viết" class="btn btn-info" />
-							</div>
-                                            
-					</form>
-				</div>
-			</div>
+                <input type="submit" name="new_post" id="register" value=" Tạo Bài Viết" class="btn text-white" style="font-size: 20px; background: #34626c;" />
+                <input type="reset" value="Reset" class="btn text-white" style="font-size: 20px; background: #34626c;">
+                <a href="post.php"  class="btn text-dark " style="font-size: 20px;background:#cfd3ce">Back</a>
+              </div>
+                                           
+          </form>
+          
+        </div>
+        
+      </div>
+      
 		</div>
 	
     <!-- Optional JavaScript -->

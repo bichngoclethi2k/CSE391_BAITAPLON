@@ -15,10 +15,11 @@ if(isset($_POST['submit']) && $_POST['name'] !='' && $_POST['pass'] != '' && $_P
     }
     $sql="INSERT INTO dangnhap (name, pass) value('$name','$pass')";
     mysqli_query($conn,$sql);
-    echo"da dang ky thanh cong";
+    echo "<script>alert('Bạn Đã Đăng Ký Thành Công!'); window.location='index.php'</script>";
 }
 else{
-    header("location:dangky.php");
+    echo "<script>alert('Bạn Nhập Sai'); window.location='dangky.php'</script>";
+    
 }
 
 ?>

@@ -16,37 +16,46 @@ $row=mysqli_fetch_assoc($query);
     <link rel="shortcut icon" href="../img/favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    html,body{
+      font-family:'Times New Roman', Times, serif;
+    }
+  </style> 
   </head>
   <body>
-  <div class="text-center">
-        <h3>Sửa dữ liệu</h3>
+  <div class="container h-100 " style="margin-top: 60px;">
+    <div class="row h-100 justify-content-center ">
         <form action="" method="post">
-             <div class="form-group">
-                <label for="">Id</label>
-                <input type="number"  id="id" name="id"value="<?php echo $row['id'] ; ?>">
-            </div> 
-            <div class="form-group">
-                <label for="">Ho</label>
-                <input type="text" id="ho" name="ho"value="<?php echo $row['ho'] ; ?>">
-            </div>
-            <div class="form-group">
-                <label for="">Ten</label>
-                <input type="text" id="ten" name="ten"value="<?php echo $row['ten'] ; ?>">
-            </div>
-            <div class="form-group">
-                <label for="">Email</label>
-                <input type="text"  id="email" name="email"value="<?php echo $row['email'] ; ?>">
-            </div>
-            <div class="form-group">
-                <label for="">Chude</label>
-                <input type="text" id="chude" name="chude" value="<?php echo $row['chude'] ; ?>">
-            </div>
-            <div class="form-group">
-                <label for="">Noidung</label>
-                <input type="text" id="noidung" name="noidung" value="<?php echo $row['noidung'] ; ?>">
-            </div>
-            <button name='update'>Save</button>
-            <a href="user.php"  class="btn btn-primary">Back</a>
+          <h3>Sửa Dữ Liệu</h3> <br>
+          <table>
+            <tr>
+              <td><label for=""><b> Id</b></label></td>
+              <td><input type="number"  id="id" name="id"value="<?php echo $row['id'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b>Ho</b></label></td>
+              <td><input type="text" id="ho" name="ho"value="<?php echo $row['ho'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b>Ten</b></label></td>
+              <td><input type="text" id="ten" name="ten"value="<?php echo $row['ten'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b>Email</b></label></td>
+              <td><input type="text"  id="email" name="email"value="<?php echo $row['email'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b>Chude</b></label></td>
+              <td><input type="text" id="chude" name="chude" value="<?php echo $row['chude'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><label for=""><b>Noidung</b></label></td>
+              <td><input type="text" id="noidung" name="noidung" value="<?php echo $row['noidung'] ; ?>"></td>
+            </tr>
+            <tr>
+              <td><button name='update'class="btn text-white" style="background: #839b97;">Save</button></td>
+              <td><a href="user.php"  class="btn text-white " style="background:#34626c">Back </a></td>
+            </tr>
             <?php
                 if (isset($_POST['update'])){
                 $id=$_GET['id'];
